@@ -4,6 +4,7 @@ class Matrix :
   def __init__ (self,matrix) : # Object constructor
     "initialize a matrix object"
     self.rows = len( matrix )
+    # Check the rows and columns of the matrix for validity
     if not ( self.rows ) :
       raise ValueError("Invalid Matrix")
     self.cols = len( matrix[0] )
@@ -11,6 +12,7 @@ class Matrix :
       raise ValueError("Invalid Matrix")
     self.matrix = tuple( tuple( map( float, row ))
       for row in matrix if ( len(row) == self.cols ))
+    # throw an exception if the matrix is not rectangular
     if not ( len(self.matrix) == self.rows ) :
       raise ValueError("Invalid Matrix")
     self.square = ( self.cols == self.rows )
@@ -86,13 +88,22 @@ class Matrix :
     "returns the difference of two matrices or a matrix and a scalar"
     if not isinstance( other, Matrix ) :
       return ( self - Matrix.unit( self.cols, other ))
+    # throw an exception if the matrices are not the same size
     if (( other.rows != self.rows ) or
       ( other.cols != self.cols )) :
       raise ValueError("Invalid Matrix Sum")
+    
+    # The following code is equivalent to the following
+    # for i in range(self.rows) :
+    #   for j in range(other.cols) :
+    #     result[i][j] = self.matrix[i][j] - other.matrix[i][j]
+    
     return Matrix( tuple( tuple(
       ( self.matrix[i][j] - other.matrix[i][j] )
       for j in range(other.cols))
       for i in range(self.rows)))
+  
+  __rsub__ = __sub__
   
   def __mul__ (self,other) :
     "returns the product of two matrices or a matrix and a scalar"
@@ -100,6 +111,13 @@ class Matrix :
       return ( self * Matrix.unit( self.cols, other ))
     if ( self.cols != other.rows ) :
       raise ValueError("Invalid Matrix Product")
+    
+    # The following code is equivalent to the following
+    # for i in range(self.rows) :
+    #   for j in range(other.cols) :
+    #     for k in range(self.cols) :
+    #       result[i][j] += self.matrix[i][k] * other.matrix[k][j]
+
     return Matrix( tuple( tuple(
       sum(( self.matrix[i][k] *
         other.matrix[k][j] )
@@ -107,15 +125,23 @@ class Matrix :
       for j in range(other.cols))
       for i in range(self.rows)))
   
-
+  __rmul__ = __mul__
   
   def inverse (self) :
-    "returns the inverse of a matrix using the determinant method"
+    "returns the inverse of a matrix using the determinant method, this method is not recommended for large matrices and has a O(n!) time complexity"
+    # throw an exception if the matrix is not square
     if not ( self.square ) :
       raise ValueError("Non-Square Matrix")
     det = self.determinant()
+    # throw an exception if the matrix is singular
     if ( det == 0.0 ) :
       raise ValueError("Singular Matrix")
+    
+    # The following code is equivalent to the following
+    # for i in range(self.rows) :
+    #   for j in range(self.cols) :
+    #     result[i][j] = Matrix.sign(i,j) * self.submatrix(i,j).determinant()
+
     return ( ( 1.0 / det ) *
       Matrix( tuple( tuple(
         ( Matrix.sign(i,j) *
