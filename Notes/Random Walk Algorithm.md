@@ -1,0 +1,2 @@
++ [Wikipedia](https://en.wikipedia.org/wiki/Random_walk)
+	+ In [mathematics](https://en.wikipedia.org/wiki/Mathematics), a **random walk** is a [random process](https://en.wikipedia.org/wiki/Random_process "Random process") that describes a path that consists of a succession of [random](https://en.wikipedia.org/wiki/Random "Random") steps on some [mathematical space](https://en.wikipedia.org/wiki/Space_(mathematics) "Space (mathematics)").

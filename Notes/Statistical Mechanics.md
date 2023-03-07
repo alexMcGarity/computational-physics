@@ -1,0 +1,2 @@
++ [Wikipedia](https://en.wikipedia.org/wiki/Statistical_mechanics)
+	+ In [physics](https://en.wikipedia.org/wiki/Physics), **statistical mechanics** is a mathematical framework that applies [statistical methods](https://en.wikipedia.org/wiki/Statistics "Statistics") and [probability theory](https://en.wikipedia.org/wiki/Probability_theory "Probability theory") to large assemblies of microscopic entities. It does not assume or postulate any natural laws, but explains the macroscopic behavior of nature from the behavior of such ensembles.
