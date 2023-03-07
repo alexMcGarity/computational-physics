@@ -1,3 +1,6 @@
+import random
+
+
 class Matrix :
   "Generate and manipulate matrix objects"
 
