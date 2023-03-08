@@ -23,12 +23,8 @@
             "id": "290a61ba577fb896",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Gaussian Distribution.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -206,7 +202,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Gaussian Distribution.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +218,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Gaussian Distribution.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -245,9 +239,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Gaussian Distribution.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -269,6 +261,7 @@
   },
   "active": "290a61ba577fb896",
   "lastOpenFiles": [
+    "Gaussian Distribution.md",
     "One-Dimensional Kinematics.md",
     "Monte Carlo Method.md",
     "Quadratic Wind Drag.md",
@@ -280,7 +273,6 @@
     "Mathmatical Model.md",
     "Markov Chain.md",
     "Ising Model.md",
-    "Gaussian Distribution.md",
     "Ferromagnetism.md",
     "Box-Muller Transform.md",
     "Boltzmann Distribution.md"
