@@ -23,8 +23,12 @@
             "id": "290a61ba577fb896",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "2023-03-20.md",
+                "mode": "source",
+                "source": false
+              }
             }
           },
           {
@@ -69,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Box-Muller Transform.md",
+                "file": "2023-03-24.md",
                 "mode": "source",
                 "source": false
               }
@@ -129,14 +133,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "One-Dimensional Kinematics.md",
+                "file": "2023-03-20.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -202,6 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2023-03-24.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -218,6 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2023-03-24.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -239,7 +245,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "2023-03-24.md"
+              }
             }
           }
         ]
@@ -259,10 +267,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "290a61ba577fb896",
+  "active": "ec7cfdde7df3e294",
   "lastOpenFiles": [
-    "Gaussian Distribution.md",
+    "2023-03-20.md",
+    "2023-03-24.md",
+    "Box-Muller Transform.md",
     "One-Dimensional Kinematics.md",
+    "Linear Regression.md",
+    "Gaussian Distribution.md",
     "Monte Carlo Method.md",
     "Quadratic Wind Drag.md",
     "Random Walk Algorithm.md",
@@ -274,7 +286,6 @@
     "Markov Chain.md",
     "Ising Model.md",
     "Ferromagnetism.md",
-    "Box-Muller Transform.md",
     "Boltzmann Distribution.md"
   ]
 }
