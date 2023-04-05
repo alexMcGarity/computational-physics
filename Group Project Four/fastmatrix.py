@@ -150,7 +150,7 @@ class Matrix :
     "returns the product of two matrices or a matrix and a scalar"
     if not isinstance( other, Matrix ) :
       return ( self * Matrix.unit( self.cols, other ))
-    if ( self.cols != other.rows ) :
+    if ( self.cols != other.rows ):
       raise ValueError("Invalid Matrix Product")
     
     # The following code is equivalent to the following
